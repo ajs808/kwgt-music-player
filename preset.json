@@ -1,0 +1,96 @@
+{
+  "preset_info": {
+    "version": 11,
+    "title": "Minimalist Music Player",
+    "description": "Simple, clean music player widget",
+    "author": "Arul Saxena",
+    "email": "asaxena101g@gmail.com",
+    "width": 1670,
+    "height": 1442,
+    "features": "MUSIC",
+    "release": 345007815,
+    "locked": false,
+    "pflags": 0
+  },
+  "preset_root": {
+    "internal_events": [
+      {
+        "action": "LAUNCH_APP",
+        "intent": "intent:#Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;component=com.spotify.music/.MainActivity;S.org.kustom.intent.label=Spotify;end"
+      }
+    ],
+    "internal_type": "RootLayerModule",
+    "config_scale_value": 129.67625,
+    "viewgroup_items": [
+      {
+        "internal_type": "ShapeModule",
+        "shape_width": 540.0,
+        "paint_mode": "CLEAR",
+        "internal_title": "base"
+      },
+      {
+        "internal_type": "ShapeModule",
+        "internal_toggles": {
+          "fx_gradient": 0,
+          "fx_gradient_bitmap": 10
+        },
+        "internal_formulas": {
+          "fx_gradient": "$mi(cover)$",
+          "fx_gradient_bitmap": "$mi(cover)$"
+        },
+        "shape_width": 500.0,
+        "shape_corners": 75.0,
+        "fx_gradient": "BITMAP",
+        "internal_title": "cover"
+      },
+      {
+        "internal_type": "ShapeModule",
+        "internal_title": "prev",
+        "internal_events": [
+          {
+            "type": "SINGLE_TAP",
+            "action": "MUSIC",
+            "music_action": "PREVIOUS"
+          }
+        ],
+        "position_offset_x": -166.0,
+        "shape_type": "RECT",
+        "shape_width": 165.0,
+        "shape_height": 500.0,
+        "shape_corners": 75.0,
+        "paint_mode": "DST"
+      },
+      {
+        "internal_type": "ShapeModule",
+        "internal_title": "playPause",
+        "internal_events": [
+          {
+            "type": "SINGLE_TAP",
+            "action": "MUSIC"
+          }
+        ],
+        "shape_type": "RECT",
+        "shape_width": 170.0,
+        "shape_height": 500.0,
+        "paint_mode": "DST"
+      },
+      {
+        "internal_type": "ShapeModule",
+        "internal_title": "skip",
+        "internal_events": [
+          {
+            "type": "SINGLE_TAP",
+            "action": "MUSIC",
+            "music_action": "NEXT"
+          }
+        ],
+        "position_offset_x": 166.0,
+        "shape_type": "RECT",
+        "shape_width": 165.0,
+        "shape_height": 500.0,
+        "shape_corners": 75.0,
+        "paint_mode": "DST"
+      }
+    ]
+  }
+}
