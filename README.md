@@ -1,5 +1,5 @@
 # kwgt-music-player
-A simple, minimalist music player widget for Android developed using kwgt framework.
+A simple, minimalist music player widget for Android developed using KWGT framework.
 
 ## Screenshots
 
