@@ -1,6 +1,10 @@
 # kwgt-music-player
 A simple, minimalist music player widget for Android developed using KWGT framework.
 
+## Installation
+Use `build.sh` to generate `kwgt-music-player.kwgt` and copy the file onto the `Kustom/widgets` path of your Android device.
+
+
 ## Screenshots
 
 The widget displays the cover art of the song that is currently playing, as shown in the below picture.
